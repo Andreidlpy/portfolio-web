@@ -8,7 +8,7 @@ import Skills from "@/components/skills";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center px-4">
+    <main className="flex flex-col  px-4 max-w-7xl m-auto items-center">
       <Intro />
       <SectionDivider />
       <About />
