@@ -26,7 +26,7 @@ export default function Intro() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <span className="font-bold bg-gradient-to-r from-purple-500 to-blue-600 bg-clip-text text-4xl text-transparent">
+          <span className="font-bold bg-gradient-to-r from-purple-500 to-primary-600 bg-clip-text text-4xl text-transparent">
             Hello, I'm
             <br />
           </span>
@@ -40,9 +40,9 @@ export default function Intro() {
             ></TypeAnimation>
           </span>
           <p className="text-xl text-balance text-gray-400 pt-2">
-            with 1 year of experience. I enjoy building{" "}
-            <span className="italic">sites & apps</span>. My focus is{" "}
-            <span className="font-bold">React Next.js</span>.
+            con 1 año de experiencia. Me gusta construir{" "}
+            <span className="italic">sitios & aplicaciones</span>. Mi enfoque es{" "}
+            <span className="font-bold">React, Next.js</span>.
           </p>
         </motion.h1>
 
@@ -65,20 +65,6 @@ export default function Intro() {
             className="rounded-full object-cover bg-[#181818] bg-transparent/10 p-5"
           />
         </motion.div>
-
-        {/* <motion.span
-              className="absolute bottom-0 right-0 text-4xl"
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                type: "spring",
-                stiffness: 125,
-                delay: 0.1,
-                duration: 0.7,
-              }}
-            >
-              👋
-            </motion.span> */}
       </div>
 
       <motion.div
@@ -91,25 +77,26 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-500 text-white px-7 mx-2 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group  bg-gradient-to-r from-purple-500 to-primary-600    text-white px-7 mx-2 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          Contáctame aquí{" "}
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition " />
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 mx-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          className="group from-purple-500 to-primary-600 dark:bg-gradient-to-r rounded-full border focus:scale-110 hover:scale-110 active:scale-105 transition p-[2px] border-none"
           href="/CV.pdf"
           download
         >
-          Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          <div className="px-7 py-3  flex items-center gap-2 rounded-full outline-none  transition cursor-pointer   dark:bg-gray-700 ">
+            Descargar CV{" "}
+            <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          </div>
         </a>
-
         <a
           className="bg-white p-3 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://linkedin.com"
